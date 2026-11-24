@@ -182,5 +182,92 @@
       }
     }
   ],
-  "plugins": []
+  "plugins": [
+    {
+      "id": "database",
+      "name": "Database",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "MySQL / MariaDB and SQLite in the IDE: connection from DATABASE_URL, schema browser, table data, structure and DDL, SQL console with results.",
+      "icon": "\uE81E",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/database-1.0.0.zip",
+      "tags": [
+        "database",
+        "mysql",
+        "sqlite",
+        "sql"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/database"
+    },
+    {
+      "id": "logs",
+      "name": "Logs",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Live viewer of var/log/*.log: follows the file as it grows, colours and filters the levels (DEBUG to EMERGENCY), searches and pretty-prints the JSON context of each entry.",
+      "icon": "\uE9D9",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/logs-1.0.0.zip",
+      "tags": [
+        "logs",
+        "debug"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/logs"
+    },
+    {
+      "id": "mercure",
+      "name": "Mercure",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Real-time updates of NeoPHP: hub status, live subscription to topics, publishing of test updates and JWT generation from MERCURE_URL / MERCURE_JWT_SECRET.",
+      "icon": "\uE8BD",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/mercure-1.0.0.zip",
+      "tags": [
+        "mercure",
+        "realtime",
+        "sse"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/mercure"
+    },
+    {
+      "id": "routes",
+      "name": "Routes",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Every route of the application (route:list) in a searchable panel: HTTP methods, paths and names; double-click opens the controller method, GET routes open in the browser.",
+      "icon": "\uE8F0",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/routes-1.0.0.zip",
+      "tags": [
+        "routing",
+        "controllers"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/routes"
+    },
+    {
+      "id": "toolbox",
+      "name": "NeoPHP Toolbox",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "The project at a glance: doctor report (PHP, database, mailer, Mercure…), migrations with their state, queue and scheduler status, cache and maintenance mode in one click.",
+      "icon": "\uE90F",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/toolbox-1.0.0.zip",
+      "tags": [
+        "doctor",
+        "migrations",
+        "queue",
+        "scheduler",
+        "cache"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/toolbox"
+    }
+  ]
 }

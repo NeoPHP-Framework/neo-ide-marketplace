@@ -1,0 +1,22 @@
+<Project>
+    <!-- Common settings of the NeoIDE plugins.
+         The plugin API (NeoIDE.Sdk) comes from the NeoIDE repository: by default a checkout in .neoide/ at the root of this
+         repository (what the CI does), or the folder given by the NeoIdeRoot environment variable / MSBuild property. -->
+    <PropertyGroup>
+        <TargetFramework>net11.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>latest</LangVersion>
+        <!-- loaded in its own AssemblyLoadContext: copies the NuGet dependencies and writes the .deps.json -->
+        <EnableDynamicLoading>true</EnableDynamicLoading>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+        <DebugType>none</DebugType>
+        <NeoIdeRoot Condition="'$(NeoIdeRoot)' == ''">$(MSBuildThisFileDirectory)..\.neoide</NeoIdeRoot>
+    </PropertyGroup>
+    <ItemGroup>
+        <!-- provided by NeoIDE at runtime: never copied next to the plugin -->
+        <ProjectReference Include="$(NeoIdeRoot)\NeoIDE.Sdk\NeoIDE.Sdk.csproj" Private="false" ExcludeAssets="runtime" />
+        <None Include="plugin.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    </ItemGroup>
+</Project>

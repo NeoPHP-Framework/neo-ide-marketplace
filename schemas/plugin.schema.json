@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "title": "NeoIDE plugin manifest (plugin.json)",
+  "type": "object",
+  "required": ["id", "name", "version", "author", "description", "assembly", "sdk"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$", "description": "Unique id, also the folder name (plugins/<id>)." },
+    "name": { "type": "string" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$", "description": "Bump it to publish a new package: NeoIDE offers the update." },
+    "author": { "type": "string" },
+    "description": { "type": "string" },
+    "icon": { "type": "string", "description": "Segoe Fluent Icons glyph, e.g. \"\\uE81E\"." },
+    "assembly": { "type": "string", "pattern": "\\.dll$", "description": "Main assembly of the plugin." },
+    "entry": { "type": "string", "description": "Full name of the IPlugin class (default: the first IPlugin of the assembly)." },
+    "sdk": { "type": "integer", "minimum": 1, "description": "Version of the NeoIDE plugin API (NeoIDE.Sdk.SdkInfo.Version)." },
+    "minIdeVersion": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "homepage": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  }
+}

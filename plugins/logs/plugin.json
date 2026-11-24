@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "logs",
+  "name": "Logs",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "Live viewer of var/log/*.log: follows the file as it grows, colours and filters the levels (DEBUG to EMERGENCY), searches and pretty-prints the JSON context of each entry.",
+  "icon": "\uE9D9",
+  "assembly": "NeoIDE.Plugin.Logs.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["logs", "debug"]
+}

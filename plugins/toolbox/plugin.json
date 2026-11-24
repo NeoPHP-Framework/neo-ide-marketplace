@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "toolbox",
+  "name": "NeoPHP Toolbox",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "The project at a glance: doctor report (PHP, database, mailer, Mercure…), migrations with their state, queue and scheduler status, cache and maintenance mode in one click.",
+  "icon": "\uE90F",
+  "assembly": "NeoIDE.Plugin.Toolbox.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["doctor", "migrations", "queue", "scheduler", "cache"]
+}

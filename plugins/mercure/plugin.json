@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "mercure",
+  "name": "Mercure",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "Real-time updates of NeoPHP: hub status, live subscription to topics, publishing of test updates and JWT generation from MERCURE_URL / MERCURE_JWT_SECRET.",
+  "icon": "\uE8BD",
+  "assembly": "NeoIDE.Plugin.Mercure.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["mercure", "realtime", "sse"]
+}

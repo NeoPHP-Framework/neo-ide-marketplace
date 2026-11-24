@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "routes",
+  "name": "Routes",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "Every route of the application (route:list) in a searchable panel: HTTP methods, paths and names; double-click opens the controller method, GET routes open in the browser.",
+  "icon": "\uE8F0",
+  "assembly": "NeoIDE.Plugin.Routes.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["routing", "controllers"]
+}

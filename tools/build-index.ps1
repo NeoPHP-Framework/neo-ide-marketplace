@@ -65,10 +65,46 @@ foreach ($file in Get-ChildItem (Join-Path $root "themes") -Filter *.json | Sort
     }
 }
 
+# ------------------------------------------------------------------ plugins
+# Packages are built by .github/workflows/plugins.yml and attached to the "plugins" release of this repository.
+$releaseBase = "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins"
+$plugins = @()
+foreach ($dir in Get-ChildItem (Join-Path $root "plugins") -Directory | Sort-Object Name) {
+    $file = Join-Path $dir.FullName "plugin.json"
+    if (-not (Test-Path $file)) { continue }
+    $label = "plugins/$($dir.Name)/plugin.json"
+    try { $p = [System.IO.File]::ReadAllText($file, [System.Text.Encoding]::UTF8) | ConvertFrom-Json }
+    catch { $errors += "${label}: invalid JSON ($($_.Exception.Message))"; continue }
+    foreach ($field in "id", "name", "version", "author", "description", "assembly") {
+        if (-not $p.$field) { $errors += "${label}: missing '$field'" }
+    }
+    if (-not $p.sdk) { $errors += "${label}: missing 'sdk'" }
+    if ($p.id -and $p.id -ne $dir.Name) { $errors += "${label}: the folder must be named '$($p.id)'" }
+    if ($p.version -and $p.version -notmatch '^\d+\.\d+\.\d+$') { $errors += "${label}: version must look like 1.2.3" }
+    if (-not (Get-ChildItem $dir.FullName -Filter *.csproj)) { $errors += "plugins/$($dir.Name): no .csproj" }
+    $entry = [ordered]@{
+        id          = $p.id
+        name        = $p.name
+        version     = $p.version
+        author      = $p.author
+        description = $p.description
+        icon        = if ($p.icon) { $p.icon } else { [string][char]0xE74C }
+        sdk         = [int]$p.sdk
+        download    = "$releaseBase/$($p.id)-$($p.version).zip"
+        tags        = @($p.tags | Where-Object { $_ })
+    }
+    if ($p.minIdeVersion) { $entry.minIdeVersion = $p.minIdeVersion }
+    if ($p.homepage) { $entry.homepage = $p.homepage } else { $entry.homepage = "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/$($p.id)" }
+    $plugins += $entry
+}
+
 if ($errors.Count -gt 0) {
     $errors | ForEach-Object { Write-Host "ERROR $_" -ForegroundColor Red }
     exit 1
 }
+
+# private use area (icon glyphs), built at runtime: the script stays ASCII for Windows PowerShell 5.1
+$script:Pua = '[' + [char]0xE000 + '-' + [char]0xF8FF + ']'
 
 # Own serializer: same output with Windows PowerShell 5.1 and pwsh 7 (ConvertTo-Json formats differently).
 function Format-Json($value, [int]$level = 0) {
@@ -78,6 +114,8 @@ function Format-Json($value, [int]$level = 0) {
     if ($value -is [int] -or $value -is [long] -or $value -is [double]) { return "$value" }
     if ($value -is [string]) {
         $s = $value.Replace('\', '\\').Replace('"', '\"').Replace("`n", '\n').Replace("`r", '\r').Replace("`t", '\t')
+        # icon glyphs (private use area) are written \uXXXX: invisible otherwise
+        $s = [regex]::Replace($s, $script:Pua, { param($m) '\u{0:X4}' -f [int][char]$m.Value })
         return '"' + $s + '"'
     }
     if ($value -is [System.Collections.IDictionary]) {
@@ -91,7 +129,7 @@ function Format-Json($value, [int]$level = 0) {
     return "[`n" + ($items -join ",`n") + "`n$end]"
 }
 
-$index = [ordered]@{ version = 1; themes = $themes; plugins = @() }
+$index = [ordered]@{ version = 1; themes = $themes; plugins = $plugins }
 $json = Format-Json $index
 $path = Join-Path $root "index.json"
 if ($Check) {
@@ -100,9 +138,9 @@ if ($Check) {
         Write-Host "ERROR index.json is not up to date: run 'pwsh tools/build-index.ps1' and commit the result." -ForegroundColor Red
         exit 1
     }
-    Write-Host "OK: $($themes.Count) theme(s), index.json up to date." -ForegroundColor Green
+    Write-Host "OK: $($themes.Count) theme(s), $($plugins.Count) plugin(s), index.json up to date." -ForegroundColor Green
 }
 else {
     [System.IO.File]::WriteAllText($path, $json + "`n", (New-Object System.Text.UTF8Encoding($false)))
-    Write-Host "index.json written: $($themes.Count) theme(s)." -ForegroundColor Green
+    Write-Host "index.json written: $($themes.Count) theme(s), $($plugins.Count) plugin(s)." -ForegroundColor Green
 }

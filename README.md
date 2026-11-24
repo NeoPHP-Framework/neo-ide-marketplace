@@ -1,6 +1,6 @@
 # NeoIDE Marketplace
 
-Themes (and soon plugins) for [NeoIDE](https://github.com/NeoPHP-Framework/NeoIDE), the IDE of the NeoPHP framework.
+Themes and plugins for [NeoIDE](https://github.com/NeoPHP-Framework/NeoIDE), the IDE of the NeoPHP framework.
 
 NeoIDE reads this repository directly: **Settings › Themes › Marketplace** lists the themes of `index.json`,
 downloads the JSON file of the theme you choose and installs it in `%APPDATA%\NeoIDE\themes\`.
@@ -14,7 +14,23 @@ When the `version` of a theme increases here, NeoIDE offers the update.
 | `themes/<id>.json` | One file per theme |
 | `schemas/theme.schema.json` | JSON schema of a theme (validation + completion in your editor) |
 | `tools/build-index.ps1` | Validates the themes and regenerates `index.json` |
-| `plugins/` | Reserved for the plugins |
+| `plugins/<id>/` | One folder per plugin (source + `plugin.json`) — see [plugins/README.md](plugins/README.md) |
+| `schemas/plugin.schema.json` | JSON schema of `plugin.json` |
+| `tools/build-plugins.ps1` | Builds the plugins into `dist/<id>-<version>.zip` |
+
+## Plugins
+
+| Plugin | |
+|---|---|
+| **Database** | MySQL / MariaDB and SQLite: schema, data, SQL console |
+| **Mercure** | Hub status, live subscription, publication, JWT |
+| **Routes** | Searchable `route:list`, go to the controller |
+| **Logs** | `var/log` followed live, levels, search |
+| **NeoPHP Toolbox** | Doctor, migrations, queue, scheduler, cache |
+
+Installed from **Settings › Plugins**. The packages are built by the *Plugins* workflow and attached to the
+[`plugins` release](https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/tag/plugins).
+To write one: [plugins/README.md](plugins/README.md).
 
 ## Themes
 

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "database",
+  "name": "Database",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "MySQL / MariaDB and SQLite in the IDE: connection from DATABASE_URL, schema browser, table data, structure and DDL, SQL console with results.",
+  "icon": "\uE81E",
+  "assembly": "NeoIDE.Plugin.Database.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["database", "mysql", "sqlite", "sql"]
+}
