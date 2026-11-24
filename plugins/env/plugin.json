@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "env",
+  "name": "Environment",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "The environment variables of the project as NeoPHP sees them (.env, .env.local, .env.{APP_ENV}…): final value, file that defines it, secrets masked; edit a value into .env.local in one click, without touching the committed .env.",
+  "icon": "\uE8D7",
+  "assembly": "NeoIDE.Plugin.Env.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["env", "configuration", "secrets"]
+}

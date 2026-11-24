@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "todo",
+  "name": "TODO",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "Every TODO, FIXME, HACK and XXX of src/, templates/, config/, assets/, tests/ and migrations/, grouped by file and kept up to date as you save; click to jump to the line.",
+  "icon": "\uE73A",
+  "assembly": "NeoIDE.Plugin.Todo.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["todo", "fixme", "productivity"]
+}

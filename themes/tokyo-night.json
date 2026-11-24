@@ -1,0 +1,131 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/theme.schema.json",
+  "id": "tokyo-night",
+  "name": "Tokyo Night",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "Deep night blue with soft neon accents, inspired by the lights of Tokyo.",
+  "dark": true,
+  "ui": {
+    "Accent": "#7AA2F7",
+    "AccentFg": "#16161E",
+    "AccentHover": "#82A7F7",
+    "ButtonBg": "#1A1B26",
+    "ButtonBorder": "#2E2F3C",
+    "ConsoleBg": "#1A1B26",
+    "EditorBg": "#1A1B26",
+    "ErrorFg": "#F7768E",
+    "Fg": "#C0CAF5",
+    "FgDisabled": "#3C425E",
+    "FgSecondary": "#565F89",
+    "HoverBg": "#24242F",
+    "InputBg": "#1A1B26",
+    "InputBorder": "#2E2F3C",
+    "InputFocusBorder": "#7AA2F7",
+    "LinkFg": "#7AA2F7",
+    "PanelBg": "#16161E",
+    "PopupBg": "#16161E",
+    "PopupBorder": "#2E2F3C",
+    "PressedBg": "#2D2E3B",
+    "ScrollThumb": "#404354",
+    "ScrollThumbHover": "#525569",
+    "SelectedBg": "#283457",
+    "SelectedInactiveBg": "#20263D",
+    "SeparatorBrush": "#101016",
+    "SubtleBorder": "#2E2F3C",
+    "SuccessFg": "#9ECE6A",
+    "TabActiveBg": "#1A1B26",
+    "TabBarBg": "#16161E",
+    "TitleBarBg": "#16161E",
+    "WarnFg": "#E0AF68",
+    "WelcomeMainBg": "#1A1B26",
+    "WelcomeSideBg": "#16161E",
+    "WindowBg": "#16161E"
+  },
+  "editor": {
+    "background": "#1A1B26",
+    "currentLine": "#1F2335",
+    "selection": "#283457",
+    "lineNumbers": "#474E70",
+    "activeLineNumber": "#C0CAF5",
+    "unused": "#565F89",
+    "errorUnderline": "#F7768E",
+    "bracketMatch": "#242C48",
+    "searchHighlight": "#55473A",
+    "caret": "#7AA2F7"
+  },
+  "syntax": {
+    "Default": "#C0CAF5",
+    "Keyword": "#BB9AF7",
+    "String": "#9ECE6A",
+    "StringEscape": "#89DDFF",
+    "Number": "#FF9E64",
+    "Comment": {
+      "color": "#565F89",
+      "bold": false,
+      "italic": true
+    },
+    "DocComment": {
+      "color": "#565F89",
+      "bold": false,
+      "italic": true
+    },
+    "DocTag": {
+      "color": "#BB9AF7",
+      "bold": true,
+      "italic": true
+    },
+    "Variable": "#C0CAF5",
+    "Property": "#73DACA",
+    "Constant": {
+      "color": "#FF9E64",
+      "bold": false,
+      "italic": true
+    },
+    "Function": "#7AA2F7",
+    "FunctionCall": "#7AA2F7",
+    "StaticCall": {
+      "color": "#7AA2F7",
+      "bold": false,
+      "italic": true
+    },
+    "Type": "#2AC3DE",
+    "Metadata": "#E0AF68",
+    "Tag": "#F7768E",
+    "Attribute": "#BB9AF7",
+    "AttributeValue": "#9ECE6A",
+    "Entity": "#FF9E64",
+    "Delimiter": {
+      "color": "#BB9AF7",
+      "bold": true,
+      "italic": false
+    },
+    "Selector": "#7AA2F7",
+    "CssProperty": "#73DACA",
+    "CssValue": "#FF9E64",
+    "Key": "#73DACA",
+    "JsonKey": "#73DACA",
+    "Heading": {
+      "color": "#BB9AF7",
+      "bold": true,
+      "italic": false
+    },
+    "Bold": {
+      "color": "#C0CAF5",
+      "bold": true,
+      "italic": false
+    },
+    "Italic": {
+      "color": "#C0CAF5",
+      "bold": false,
+      "italic": true
+    },
+    "Link": "#7AA2F7",
+    "Code": "#9ECE6A",
+    "Operator": "#89DDFF",
+    "Punctuation": "#89DDFF",
+    "Builtin": "#2AC3DE",
+    "Inserted": "#9ECE6A",
+    "Deleted": "#F7768E"
+  }
+}

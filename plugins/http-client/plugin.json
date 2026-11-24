@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "http-client",
+  "name": "HTTP Client",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "Test your routes and APIs without leaving the IDE: method, URL (relative to APP_URL), headers, JSON body, Ctrl+Enter to send; status, time, headers and pretty-printed response; history of the requests.",
+  "icon": "\uE774",
+  "assembly": "NeoIDE.Plugin.HttpClient.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["http", "api", "rest", "testing"]
+}

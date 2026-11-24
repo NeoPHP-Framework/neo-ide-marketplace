@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "container",
+  "name": "Container & Events",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "Explorer of the service container (debug:container) and of the event listeners in call order (event:list): search, kinds, priorities; double-click opens the class or the listener method.",
+  "icon": "\uE8F1",
+  "assembly": "NeoIDE.Plugin.Container.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["container", "services", "events", "dependency injection"]
+}

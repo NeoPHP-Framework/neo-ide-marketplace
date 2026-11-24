@@ -27,6 +27,10 @@ When the `version` of a theme increases here, NeoIDE offers the update.
 | **Routes** | Searchable `route:list`, go to the controller |
 | **Logs** | `var/log` followed live, levels, search |
 | **NeoPHP Toolbox** | Doctor, migrations, queue, scheduler, cache |
+| **HTTP Client** | Test the routes and APIs: requests, pretty responses, history |
+| **Environment** | `.env*` variables, their source, secrets masked, edit in `.env.local` |
+| **Container & Events** | Services of the container and event listeners |
+| **TODO** | TODO / FIXME of the project |
 
 Installed from **Settings › Plugins**. The packages are built by the *Plugins* workflow and attached to the
 [`plugins` release](https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/tag/plugins).
@@ -45,6 +49,13 @@ To write one: [plugins/README.md](plugins/README.md).
 | Nord | dark |
 | GitHub Light | light |
 | Solarized Light | light |
+| Neo Midnight | dark — NeoPHP's own night theme |
+| Tokyo Night | dark |
+| Catppuccin Mocha | dark |
+| Catppuccin Latte | light |
+| Gruvbox Dark | dark |
+| Solarized Dark | dark |
+| Ayu Light | light |
 
 ## Add or change a theme
 

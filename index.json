@@ -2,6 +2,66 @@
   "version": 1,
   "themes": [
     {
+      "id": "ayu-light",
+      "name": "Ayu Light",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Bright and clean, with warm orange accents.",
+      "dark": false,
+      "file": "themes/ayu-light.json",
+      "preview": {
+        "background": "#FCFCFC",
+        "foreground": "#5C6166",
+        "keyword": "#FA8D3E",
+        "string": "#86B300",
+        "function": "#E6A100",
+        "number": "#A37ACC",
+        "variable": "#5C6166",
+        "panel": "#F3F4F5",
+        "accent": "#FA8D3E"
+      }
+    },
+    {
+      "id": "catppuccin-latte",
+      "name": "Catppuccin Latte",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Soothing pastel theme, light flavour (Latte).",
+      "dark": false,
+      "file": "themes/catppuccin-latte.json",
+      "preview": {
+        "background": "#EFF1F5",
+        "foreground": "#4C4F69",
+        "keyword": "#8839EF",
+        "string": "#40A02B",
+        "function": "#1E66F5",
+        "number": "#FE640B",
+        "variable": "#4C4F69",
+        "panel": "#E6E9EF",
+        "accent": "#1E66F5"
+      }
+    },
+    {
+      "id": "catppuccin-mocha",
+      "name": "Catppuccin Mocha",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Soothing pastel theme, dark flavour (Mocha).",
+      "dark": true,
+      "file": "themes/catppuccin-mocha.json",
+      "preview": {
+        "background": "#1E1E2E",
+        "foreground": "#CDD6F4",
+        "keyword": "#CBA6F7",
+        "string": "#A6E3A1",
+        "function": "#89B4FA",
+        "number": "#FAB387",
+        "variable": "#CDD6F4",
+        "panel": "#181825",
+        "accent": "#89B4FA"
+      }
+    },
+    {
       "id": "darcula",
       "name": "Darcula",
       "version": "1.0.0",
@@ -59,6 +119,26 @@
         "variable": "#953800",
         "panel": "#F6F8FA",
         "accent": "#0969DA"
+      }
+    },
+    {
+      "id": "gruvbox-dark",
+      "name": "Gruvbox Dark",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Retro groove: warm, earthy contrast that is easy on the eyes.",
+      "dark": true,
+      "file": "themes/gruvbox-dark.json",
+      "preview": {
+        "background": "#282828",
+        "foreground": "#EBDBB2",
+        "keyword": "#FB4934",
+        "string": "#B8BB26",
+        "function": "#FABD2F",
+        "number": "#D3869B",
+        "variable": "#EBDBB2",
+        "panel": "#1D2021",
+        "accent": "#FE8019"
       }
     },
     {
@@ -122,6 +202,26 @@
       }
     },
     {
+      "id": "neo-midnight",
+      "name": "Neo Midnight",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "NeoPHP's own deep blue night theme: calm background, bright NeoPHP blue accents.",
+      "dark": true,
+      "file": "themes/neo-midnight.json",
+      "preview": {
+        "background": "#0F1626",
+        "foreground": "#D6DEEB",
+        "keyword": "#5B9BFF",
+        "string": "#4FD6A8",
+        "function": "#FFCB6B",
+        "number": "#F5A97F",
+        "variable": "#E2A3FF",
+        "panel": "#0B111E",
+        "accent": "#3574F0"
+      }
+    },
+    {
       "id": "nord",
       "name": "Nord",
       "version": "1.0.0",
@@ -162,6 +262,26 @@
       }
     },
     {
+      "id": "solarized-dark",
+      "name": "Solarized Dark",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "The classic Solarized palette, dark background.",
+      "dark": true,
+      "file": "themes/solarized-dark.json",
+      "preview": {
+        "background": "#002B36",
+        "foreground": "#93A1A1",
+        "keyword": "#859900",
+        "string": "#2AA198",
+        "function": "#268BD2",
+        "number": "#D33682",
+        "variable": "#93A1A1",
+        "panel": "#00232C",
+        "accent": "#268BD2"
+      }
+    },
+    {
       "id": "solarized-light",
       "name": "Solarized Light",
       "version": "1.0.0",
@@ -180,9 +300,47 @@
         "panel": "#EEE8D5",
         "accent": "#268BD2"
       }
+    },
+    {
+      "id": "tokyo-night",
+      "name": "Tokyo Night",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Deep night blue with soft neon accents, inspired by the lights of Tokyo.",
+      "dark": true,
+      "file": "themes/tokyo-night.json",
+      "preview": {
+        "background": "#1A1B26",
+        "foreground": "#C0CAF5",
+        "keyword": "#BB9AF7",
+        "string": "#9ECE6A",
+        "function": "#7AA2F7",
+        "number": "#FF9E64",
+        "variable": "#C0CAF5",
+        "panel": "#16161E",
+        "accent": "#7AA2F7"
+      }
     }
   ],
   "plugins": [
+    {
+      "id": "container",
+      "name": "Container & Events",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Explorer of the service container (debug:container) and of the event listeners in call order (event:list): search, kinds, priorities; double-click opens the class or the listener method.",
+      "icon": "\uE8F1",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/container-1.0.0.zip",
+      "tags": [
+        "container",
+        "services",
+        "events",
+        "dependency injection"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/container"
+    },
     {
       "id": "database",
       "name": "Database",
@@ -200,6 +358,41 @@
       ],
       "minIdeVersion": "0.2.0",
       "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/database"
+    },
+    {
+      "id": "env",
+      "name": "Environment",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "The environment variables of the project as NeoPHP sees them (.env, .env.local, .env.{APP_ENV}…): final value, file that defines it, secrets masked; edit a value into .env.local in one click, without touching the committed .env.",
+      "icon": "\uE8D7",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/env-1.0.0.zip",
+      "tags": [
+        "env",
+        "configuration",
+        "secrets"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/env"
+    },
+    {
+      "id": "http-client",
+      "name": "HTTP Client",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Test your routes and APIs without leaving the IDE: method, URL (relative to APP_URL), headers, JSON body, Ctrl+Enter to send; status, time, headers and pretty-printed response; history of the requests.",
+      "icon": "\uE774",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/http-client-1.0.0.zip",
+      "tags": [
+        "http",
+        "api",
+        "rest",
+        "testing"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/http-client"
     },
     {
       "id": "logs",
@@ -249,6 +442,23 @@
       ],
       "minIdeVersion": "0.2.0",
       "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/routes"
+    },
+    {
+      "id": "todo",
+      "name": "TODO",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Every TODO, FIXME, HACK and XXX of src/, templates/, config/, assets/, tests/ and migrations/, grouped by file and kept up to date as you save; click to jump to the line.",
+      "icon": "\uE73A",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/todo-1.0.0.zip",
+      "tags": [
+        "todo",
+        "fixme",
+        "productivity"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/todo"
     },
     {
       "id": "toolbox",

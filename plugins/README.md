@@ -7,6 +7,10 @@
 | [Routes](routes) | left bar | `route:list` in a searchable panel; double-click opens the controller method, GET routes open in the browser (asks the `{parameters}`). |
 | [Logs](logs) | bottom bar | `var/log/*.log` followed live, levels coloured and filtered, search, pretty JSON context. |
 | [NeoPHP Toolbox](toolbox) | left bar | `doctor` report, migrations and their state, queue and scheduler status, cache / assets / maintenance mode. |
+| [HTTP Client](http-client) | left bar + editor tabs | Requests to the app (URL relative to `APP_URL`), headers, JSON body, Ctrl+Enter; status, time, headers, pretty response; history. |
+| [Environment](env) | left bar | Final value of every `.env*` variable and the file that sets it, secrets masked, edit into `.env.local`. |
+| [Container & Events](container) | left bar | `debug:container` and `event:list` (listeners in call order, priorities), go to the class / listener. |
+| [TODO](todo) | left bar | TODO / FIXME / HACK / XXX of the project, grouped by file, updated on save. |
 
 Install them from **NeoIDE › Settings › Plugins** (or Tools › Plugins…).
 
