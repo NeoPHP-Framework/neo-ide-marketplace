@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "assets",
+  "name": "Assets & Tailwind",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "Front-end of NeoPHP without Node.js: installs Tailwind CSS (standalone CLI), runs tailwind:run --watch in the background with its output, compiles / minifies, reloads the assets and lists the published files of public/builds with their size.",
+  "icon": "\uE790",
+  "assembly": "NeoIDE.Plugin.Assets.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["assets", "tailwind", "css", "front-end"]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "code-quality",
+  "name": "Code Quality",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "PHPStan and PHP-CS-Fixer in the IDE: static analysis by level with the errors grouped by file (click to jump to the line), coding-style check with the diff of each file and fix in one click; installs the tools with Composer when they are missing.",
+  "icon": "\uE9F5",
+  "assembly": "NeoIDE.Plugin.CodeQuality.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["phpstan", "php-cs-fixer", "static analysis", "coding style"]
+}

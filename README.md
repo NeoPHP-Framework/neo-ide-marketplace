@@ -31,6 +31,11 @@ When the `version` of a theme increases here, NeoIDE offers the update.
 | **Environment** | `.env*` variables, their source, secrets masked, edit in `.env.local` |
 | **Container & Events** | Services of the container and event listeners |
 | **TODO** | TODO / FIXME of the project |
+| **OpenAPI** | Endpoints of the API documentation, curl, export |
+| **NeoAI** | Chat with the NeoAI assistant, code audits |
+| **Assets & Tailwind** | Tailwind watch / build, assets |
+| **Code Quality** | PHPStan and PHP-CS-Fixer |
+| **Composer Audit** | Vulnerabilities and outdated dependencies |
 
 Installed from **Settings › Plugins**. The packages are built by the *Plugins* workflow and attached to the
 [`plugins` release](https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/tag/plugins).

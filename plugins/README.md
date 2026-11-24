@@ -11,6 +11,11 @@
 | [Environment](env) | left bar | Final value of every `.env*` variable and the file that sets it, secrets masked, edit into `.env.local`. |
 | [Container & Events](container) | left bar | `debug:container` and `event:list` (listeners in call order, priorities), go to the class / listener. |
 | [TODO](todo) | left bar | TODO / FIXME / HACK / XXX of the project, grouped by file, updated on save. |
+| [OpenAPI](openapi) | left bar + editor tabs | `openapi:dump` as endpoints grouped by tag: parameters, body, responses (schemas resolved), copy as curl, export JSON / YAML. |
+| [NeoAI](neoai) | left bar | Chat with the NeoAI assistant (answers streamed, any connection of `neo_ai.yaml`), `ai:scan` audits by focus and their reports. |
+| [Assets & Tailwind](assets) | bottom bar | `tailwind:install`, `tailwind:run --watch` in the background with its output, build / minify, `asset:reload`, files of `public/builds`. |
+| [Code Quality](code-quality) | bottom bar | PHPStan (level, errors by file, click to the line) and PHP-CS-Fixer (diff per file, fix); installs them with Composer. |
+| [Composer Audit](composer-audit) | left bar | `composer audit` (severity, CVE), outdated packages (safe / major), abandoned packages, update in one click. |
 
 Install them from **NeoIDE › Settings › Plugins** (or Tools › Plugins…).
 
@@ -21,7 +26,8 @@ A plugin is a .NET 11 WPF class library loaded by NeoIDE in its own `AssemblyLoa
 - `plugin.json` — the manifest ([schema](../schemas/plugin.schema.json));
 - a class implementing `NeoIDE.Sdk.IPlugin`, compiled against **NeoIDE.Sdk** (the API of the IDE, in the
   [NeoIDE repository](https://github.com/NeoPHP-Framework/NeoIDE/tree/main/NeoIDE.Sdk));
-- its NuGet dependencies, shipped next to it (MySqlConnector, Microsoft.Data.Sqlite… for Database).
+- its NuGet dependencies, shipped next to it (MySqlConnector, Microsoft.Data.Sqlite… for Database);
+- `plugins/_shared/*.cs` (process runner, output pane) is compiled into every plugin.
 
 ```csharp
 public sealed class HelloPlugin : IPlugin

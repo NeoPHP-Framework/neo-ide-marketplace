@@ -324,6 +324,60 @@
   ],
   "plugins": [
     {
+      "id": "assets",
+      "name": "Assets & Tailwind",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Front-end of NeoPHP without Node.js: installs Tailwind CSS (standalone CLI), runs tailwind:run --watch in the background with its output, compiles / minifies, reloads the assets and lists the published files of public/builds with their size.",
+      "icon": "\uE790",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/assets-1.0.0.zip",
+      "tags": [
+        "assets",
+        "tailwind",
+        "css",
+        "front-end"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/assets"
+    },
+    {
+      "id": "code-quality",
+      "name": "Code Quality",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "PHPStan and PHP-CS-Fixer in the IDE: static analysis by level with the errors grouped by file (click to jump to the line), coding-style check with the diff of each file and fix in one click; installs the tools with Composer when they are missing.",
+      "icon": "\uE9F5",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/code-quality-1.0.0.zip",
+      "tags": [
+        "phpstan",
+        "php-cs-fixer",
+        "static analysis",
+        "coding style"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/code-quality"
+    },
+    {
+      "id": "composer-audit",
+      "name": "Composer Audit",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Health of your dependencies: security advisories (composer audit) with severity and CVE, outdated packages (safe update or new major version), abandoned packages; update one package or every safe update in one click.",
+      "icon": "\uE72E",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/composer-audit-1.0.0.zip",
+      "tags": [
+        "composer",
+        "security",
+        "dependencies",
+        "audit"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/composer-audit"
+    },
+    {
       "id": "container",
       "name": "Container & Events",
       "version": "1.0.0",
@@ -426,6 +480,42 @@
       ],
       "minIdeVersion": "0.2.0",
       "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/mercure"
+    },
+    {
+      "id": "neoai",
+      "name": "NeoAI",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "The NeoAI development assistant of NeoPHP in a panel: chat with the project (answers streamed live, any configured connection: Ollama, OpenAI, Anthropic, Gemini…), code audits (ai:scan by focus) and their Markdown reports.",
+      "icon": "\uE99A",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/neoai-1.0.0.zip",
+      "tags": [
+        "ai",
+        "assistant",
+        "chat",
+        "audit"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/neoai"
+    },
+    {
+      "id": "openapi",
+      "name": "OpenAPI",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "The OpenAPI 3.1 document of your API (openapi:dump) as a browsable list of endpoints grouped by tag: parameters, request body, responses, schemas, copy as curl, export to JSON / YAML.",
+      "icon": "\uE943",
+      "sdk": 1,
+      "download": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/releases/download/plugins/openapi-1.0.0.zip",
+      "tags": [
+        "openapi",
+        "api",
+        "swagger",
+        "documentation"
+      ],
+      "minIdeVersion": "0.2.0",
+      "homepage": "https://github.com/NeoPHP-Framework/neo-ide-marketplace/tree/main/plugins/openapi"
     },
     {
       "id": "routes",

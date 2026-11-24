@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "composer-audit",
+  "name": "Composer Audit",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "Health of your dependencies: security advisories (composer audit) with severity and CVE, outdated packages (safe update or new major version), abandoned packages; update one package or every safe update in one click.",
+  "icon": "\uE72E",
+  "assembly": "NeoIDE.Plugin.ComposerAudit.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["composer", "security", "dependencies", "audit"]
+}

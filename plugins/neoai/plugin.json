@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "neoai",
+  "name": "NeoAI",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "The NeoAI development assistant of NeoPHP in a panel: chat with the project (answers streamed live, any configured connection: Ollama, OpenAI, Anthropic, Gemini…), code audits (ai:scan by focus) and their Markdown reports.",
+  "icon": "\uE99A",
+  "assembly": "NeoIDE.Plugin.NeoAi.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["ai", "assistant", "chat", "audit"]
+}

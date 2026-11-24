@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>NeoIDE.Plugin.NeoAi</RootNamespace>
+    </PropertyGroup>
+</Project>

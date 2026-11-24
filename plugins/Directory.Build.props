@@ -18,5 +18,7 @@
         <!-- provided by NeoIDE at runtime: never copied next to the plugin -->
         <ProjectReference Include="$(NeoIdeRoot)\NeoIDE.Sdk\NeoIDE.Sdk.csproj" Private="false" ExcludeAssets="runtime" />
         <None Include="plugin.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+        <!-- helpers shared by the plugins (processes, output pane): compiled into each plugin -->
+        <Compile Include="$(MSBuildThisFileDirectory)_shared\*.cs" Link="Shared\%(Filename)%(Extension)" />
     </ItemGroup>
 </Project>

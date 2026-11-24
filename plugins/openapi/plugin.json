@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/plugin.schema.json",
+  "id": "openapi",
+  "name": "OpenAPI",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "The OpenAPI 3.1 document of your API (openapi:dump) as a browsable list of endpoints grouped by tag: parameters, request body, responses, schemas, copy as curl, export to JSON / YAML.",
+  "icon": "\uE943",
+  "assembly": "NeoIDE.Plugin.OpenApi.dll",
+  "sdk": 1,
+  "minIdeVersion": "0.2.0",
+  "tags": ["openapi", "api", "swagger", "documentation"]
+}
