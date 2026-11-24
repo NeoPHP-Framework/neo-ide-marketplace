@@ -1,0 +1,135 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/theme.schema.json",
+  "id": "monokai",
+  "name": "Monokai",
+  "version": "1.0.0",
+  "author": "NeoPHP",
+  "description": "The iconic Monokai colours on a warm dark background.",
+  "dark": true,
+  "ui": {
+    "Accent": "#A6E22E",
+    "AccentFg": "#1E1F1C",
+    "AccentHover": "#ADE43E",
+    "ButtonBg": "#272822",
+    "ButtonBorder": "#605E51",
+    "ConsoleBg": "#272822",
+    "EditorBg": "#272822",
+    "ErrorFg": "#F75464",
+    "Fg": "#F8F8F2",
+    "FgDisabled": "#686555",
+    "FgSecondary": "#A59F85",
+    "HoverBg": "#3E3D32",
+    "InputBg": "#272822",
+    "InputBorder": "#605E51",
+    "InputFocusBorder": "#A6E22E",
+    "LinkFg": "#B0E547",
+    "PanelBg": "#1E1F1C",
+    "PopupBg": "#1E1F1C",
+    "PopupBorder": "#3B3C35",
+    "PressedBg": "#4C4B41",
+    "ScrollThumb": "#54554F",
+    "ScrollThumbHover": "#696A64",
+    "SelectedBg": "#49483E",
+    "SelectedInactiveBg": "#3E3D32",
+    "SeparatorBrush": "#171814",
+    "SubtleBorder": "#3B3C35",
+    "SuccessFg": "#5FB865",
+    "TabActiveBg": "#272822",
+    "TabBarBg": "#272822",
+    "TitleBarBg": "#1E1F1C",
+    "WarnFg": "#F2C55C",
+    "WelcomeMainBg": "#272822",
+    "WelcomeSideBg": "#1E1F1C",
+    "WindowBg": "#1E1F1C"
+  },
+  "editor": {
+    "background": "#272822",
+    "currentLine": "#3E3D32",
+    "selection": "#49483E",
+    "lineNumbers": "#90908A",
+    "activeLineNumber": "#F8F8F2",
+    "unused": "#75715E",
+    "errorUnderline": "#F92672",
+    "bracketMatch": "#49483E",
+    "searchHighlight": "#4F5B33",
+    "caret": "#F8F8F0"
+  },
+  "syntax": {
+    "Default": "#F8F8F2",
+    "Keyword": "#F92672",
+    "String": "#E6DB74",
+    "StringEscape": "#AE81FF",
+    "Number": "#AE81FF",
+    "Comment": {
+      "color": "#75715E",
+      "bold": false,
+      "italic": true
+    },
+    "DocComment": {
+      "color": "#75715E",
+      "bold": false,
+      "italic": true
+    },
+    "DocTag": {
+      "color": "#F92672",
+      "bold": true,
+      "italic": true
+    },
+    "Variable": "#F8F8F2",
+    "Property": "#F8F8F2",
+    "Constant": {
+      "color": "#AE81FF",
+      "bold": false,
+      "italic": true
+    },
+    "Function": "#A6E22E",
+    "FunctionCall": "#66D9EF",
+    "StaticCall": {
+      "color": "#66D9EF",
+      "bold": false,
+      "italic": true
+    },
+    "Type": {
+      "color": "#66D9EF",
+      "bold": false,
+      "italic": true
+    },
+    "Metadata": "#A6E22E",
+    "Tag": "#F92672",
+    "Attribute": "#A6E22E",
+    "AttributeValue": "#E6DB74",
+    "Entity": "#AE81FF",
+    "Delimiter": {
+      "color": "#F92672",
+      "bold": true,
+      "italic": false
+    },
+    "Selector": "#A6E22E",
+    "CssProperty": "#66D9EF",
+    "CssValue": "#AE81FF",
+    "Key": "#F92672",
+    "JsonKey": "#66D9EF",
+    "Heading": {
+      "color": "#A6E22E",
+      "bold": true,
+      "italic": false
+    },
+    "Bold": {
+      "color": "#BCBEC4",
+      "bold": true,
+      "italic": false
+    },
+    "Italic": {
+      "color": "#BCBEC4",
+      "bold": false,
+      "italic": true
+    },
+    "Link": "#66D9EF",
+    "Code": "#E6DB74",
+    "Operator": "#BCBEC4",
+    "Punctuation": "#BCBEC4",
+    "Builtin": "#66D9EF",
+    "Inserted": "#6AAB73",
+    "Deleted": "#F75464"
+  }
+}

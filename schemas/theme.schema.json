@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/NeoPHP-Framework/neo-ide-marketplace/main/schemas/theme.schema.json",
+  "title": "NeoIDE theme",
+  "description": "A colour theme for NeoIDE: interface, editor chrome and syntax colours. Every colour is #RRGGBB or #RRGGBBAA. Missing keys fall back to Neo Dark (dark: true) or Neo Light (dark: false).",
+  "type": "object",
+  "required": ["id", "name", "version", "author", "description", "dark"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$", "description": "Unique id, also the file name (themes/<id>.json)." },
+    "name": { "type": "string", "description": "Displayed name." },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$", "description": "Bump it so that NeoIDE offers the update." },
+    "author": { "type": "string" },
+    "description": { "type": "string" },
+    "dark": { "type": "boolean", "description": "true for a dark theme (fallback values come from Neo Dark), false for a light one (Neo Light)." },
+    "ui": {
+      "type": "object",
+      "description": "Interface colours.",
+      "additionalProperties": { "$ref": "#/$defs/color" },
+      "propertyNames": {
+        "enum": [
+          "WindowBg", "TitleBarBg", "PanelBg", "EditorBg", "SeparatorBrush", "SubtleBorder", "HoverBg", "PressedBg", "SelectedBg", "SelectedInactiveBg",
+          "Fg", "FgSecondary", "FgDisabled", "Accent", "AccentHover", "AccentFg", "InputBg", "InputBorder", "InputFocusBorder", "ButtonBg", "ButtonBorder",
+          "PopupBg", "PopupBorder", "TabActiveBg", "TabBarBg", "ScrollThumb", "ScrollThumbHover", "ErrorFg", "SuccessFg", "WarnFg", "LinkFg",
+          "ConsoleBg", "WelcomeSideBg", "WelcomeMainBg"
+        ]
+      }
+    },
+    "editor": {
+      "type": "object",
+      "description": "Editor chrome.",
+      "additionalProperties": false,
+      "properties": {
+        "background": { "$ref": "#/$defs/color" },
+        "currentLine": { "$ref": "#/$defs/color" },
+        "selection": { "$ref": "#/$defs/color" },
+        "lineNumbers": { "$ref": "#/$defs/color" },
+        "activeLineNumber": { "$ref": "#/$defs/color" },
+        "unused": { "$ref": "#/$defs/color", "description": "Unused imports." },
+        "errorUnderline": { "$ref": "#/$defs/color" },
+        "bracketMatch": { "$ref": "#/$defs/color" },
+        "searchHighlight": { "$ref": "#/$defs/color" },
+        "caret": { "$ref": "#/$defs/color" }
+      }
+    },
+    "syntax": {
+      "type": "object",
+      "description": "Syntax colours: \"#RRGGBB\" or { \"color\": \"#RRGGBB\", \"bold\": true, \"italic\": false }.",
+      "additionalProperties": { "$ref": "#/$defs/token" },
+      "propertyNames": {
+        "enum": [
+          "Default", "Keyword", "String", "StringEscape", "Number", "Comment", "DocComment", "DocTag", "Variable", "Property", "Constant",
+          "Function", "FunctionCall", "StaticCall", "Type", "Metadata", "Tag", "Attribute", "AttributeValue", "Entity", "Delimiter",
+          "Selector", "CssProperty", "CssValue", "Key", "JsonKey", "Heading", "Bold", "Italic", "Link", "Code", "Operator",
+          "Punctuation", "Builtin", "Inserted", "Deleted"
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "color": { "type": "string", "pattern": "^#([0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$" },
+    "token": {
+      "oneOf": [
+        { "$ref": "#/$defs/color" },
+        {
+          "type": "object",
+          "required": ["color"],
+          "additionalProperties": false,
+          "properties": {
+            "color": { "$ref": "#/$defs/color" },
+            "bold": { "type": "boolean" },
+            "italic": { "type": "boolean" }
+          }
+        }
+      ]
+    }
+  }
+}

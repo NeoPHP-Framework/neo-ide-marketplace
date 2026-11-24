@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "darcula",
+      "name": "Darcula",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "The classic JetBrains dark theme.",
+      "dark": true,
+      "file": "themes/darcula.json",
+      "preview": {
+        "background": "#2B2B2B",
+        "foreground": "#A9B7C6",
+        "keyword": "#CC7832",
+        "string": "#6A8759",
+        "function": "#FFC66D",
+        "number": "#6897BB",
+        "variable": "#9876AA",
+        "panel": "#3C3F41",
+        "accent": "#4A88C7"
+      }
+    },
+    {
+      "id": "dracula",
+      "name": "Dracula",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Dark theme with vivid purple, pink and green accents.",
+      "dark": true,
+      "file": "themes/dracula.json",
+      "preview": {
+        "background": "#282A36",
+        "foreground": "#F8F8F2",
+        "keyword": "#FF79C6",
+        "string": "#F1FA8C",
+        "function": "#50FA7B",
+        "number": "#BD93F9",
+        "variable": "#F8F8F2",
+        "panel": "#21222C",
+        "accent": "#BD93F9"
+      }
+    },
+    {
+      "id": "github-light",
+      "name": "GitHub Light",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "The light colours of github.com.",
+      "dark": false,
+      "file": "themes/github-light.json",
+      "preview": {
+        "background": "#FFFFFF",
+        "foreground": "#1F2328",
+        "keyword": "#CF222E",
+        "string": "#0A3069",
+        "function": "#8250DF",
+        "number": "#0550AE",
+        "variable": "#953800",
+        "panel": "#F6F8FA",
+        "accent": "#0969DA"
+      }
+    },
+    {
+      "id": "monokai",
+      "name": "Monokai",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "The iconic Monokai colours on a warm dark background.",
+      "dark": true,
+      "file": "themes/monokai.json",
+      "preview": {
+        "background": "#272822",
+        "foreground": "#F8F8F2",
+        "keyword": "#F92672",
+        "string": "#E6DB74",
+        "function": "#A6E22E",
+        "number": "#AE81FF",
+        "variable": "#F8F8F2",
+        "panel": "#1E1F1C",
+        "accent": "#A6E22E"
+      }
+    },
+    {
+      "id": "neo-dark",
+      "name": "Neo Dark",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "PhpStorm New UI dark colours — the default NeoIDE theme.",
+      "dark": true,
+      "file": "themes/neo-dark.json",
+      "preview": {
+        "background": "#1E1F22",
+        "foreground": "#BCBEC4",
+        "keyword": "#CF8E6D",
+        "string": "#6AAB73",
+        "function": "#56A8F5",
+        "number": "#2AACB8",
+        "variable": "#C77DBB",
+        "panel": "#2B2D30",
+        "accent": "#3574F0"
+      }
+    },
+    {
+      "id": "neo-light",
+      "name": "Neo Light",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "PhpStorm New UI light colours.",
+      "dark": false,
+      "file": "themes/neo-light.json",
+      "preview": {
+        "background": "#FFFFFF",
+        "foreground": "#080808",
+        "keyword": "#0033B3",
+        "string": "#067D17",
+        "function": "#00627A",
+        "number": "#1750EB",
+        "variable": "#871094",
+        "panel": "#F7F8FA",
+        "accent": "#3574F0"
+      }
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Arctic, north-bluish colours.",
+      "dark": true,
+      "file": "themes/nord.json",
+      "preview": {
+        "background": "#2E3440",
+        "foreground": "#D8DEE9",
+        "keyword": "#81A1C1",
+        "string": "#A3BE8C",
+        "function": "#88C0D0",
+        "number": "#B48EAD",
+        "variable": "#D8DEE9",
+        "panel": "#2E3440",
+        "accent": "#88C0D0"
+      }
+    },
+    {
+      "id": "one-dark",
+      "name": "One Dark",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Atom's One Dark palette.",
+      "dark": true,
+      "file": "themes/one-dark.json",
+      "preview": {
+        "background": "#282C34",
+        "foreground": "#ABB2BF",
+        "keyword": "#C678DD",
+        "string": "#98C379",
+        "function": "#61AFEF",
+        "number": "#D19A66",
+        "variable": "#E06C75",
+        "panel": "#21252B",
+        "accent": "#528BFF"
+      }
+    },
+    {
+      "id": "solarized-light",
+      "name": "Solarized Light",
+      "version": "1.0.0",
+      "author": "NeoPHP",
+      "description": "Ethan Schoonover's Solarized, light variant.",
+      "dark": false,
+      "file": "themes/solarized-light.json",
+      "preview": {
+        "background": "#FDF6E3",
+        "foreground": "#586E75",
+        "keyword": "#859900",
+        "string": "#2AA198",
+        "function": "#268BD2",
+        "number": "#D33682",
+        "variable": "#268BD2",
+        "panel": "#EEE8D5",
+        "accent": "#268BD2"
+      }
+    }
+  ],
+  "plugins": []
+}
